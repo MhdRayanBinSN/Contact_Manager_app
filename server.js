@@ -8,7 +8,10 @@ const app = express()
 const port = process.env.PORT
 
 app.use(express.json()); //help to parse data from client
-app.use('/api/contacts',require('./routes/contactRoutes'))
+app.use('/api/contacts',require('./routes/contactRoutes')) //contact
+
+app.use('/api/users',require('./routes/userRoutes'))   //reg and login
+
 
 app.use(errorHandler)
 
