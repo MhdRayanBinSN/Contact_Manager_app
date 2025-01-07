@@ -6,8 +6,22 @@ import ContactCard from "./ContactCard"
 import ContactList from "./ContactList"
 
 function App() {
+  const contacts =[ {
+    "id":1,
+    "name":"rayan",
+    "email":"rayan6203@gmail.com"
+  }, {
+    "id":2,
+    "name":"raihan",
+    "email":"raihan6203@gmail.com"
+  }]
   return (
-    <div>Hello World</div>
+    <div className='ui container center'>
+      <Header />
+      <AddContact/>
+      <ContactList contacts={contacts}/>
+    </div>
+    
   );
 }
 
