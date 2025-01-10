@@ -18,7 +18,7 @@ class AddContact extends React.Component {
         }
         this.props.addContactHandler(this.state)
         this.setState({name:"",email:""}) //for clearing
-       // console.log(this.state);
+       // console.log(this.state); //set state
     }
 
     render() {
