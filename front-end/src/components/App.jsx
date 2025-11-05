@@ -36,7 +36,9 @@ function App() {
       <Header />
       <AddContact addContactHandler={addContactHandler} />
       <ContactList contacts={contacts} getContactId={removeContactHandler} />
+  
     </div>
+   
   );
 }
 
